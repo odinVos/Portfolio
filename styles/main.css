@@ -1,0 +1,37 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* dit zorgt ervoor dat alles standaard zonder padding en margin is */
+}
+
+nav ul {
+  list-style-type: none; /*zogt ervoor dat het er niet uit ziet als een list*/
+  overflow: hidden;
+  background-color: #ff7b00;
+  /* styling voor de items in de navbar */
+}
+
+nav li {
+  float: left;
+  /* zorgt ervoor dat alle list itms in de nav aan de linker kant komen staan */
+}
+.logo {
+  width: 100%;
+  text-align: center;
+  line-height: 55px;
+  /* Een simpel logo voor de navbar */
+}
+
+nav li a {
+  display: block; /* maakt van het item een rechthoek*/
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(17, 17, 17);
+  transition: 1s;
+  /* verranderd de achtergrond kleur van een list item als je er met je muis overheen gaat ìn een duur van een seconde */
+}
