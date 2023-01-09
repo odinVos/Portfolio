@@ -16,6 +16,8 @@ nav li {
   /* zorgt ervoor dat alle list itms in de nav aan de linker kant komen staan */
 }
 .logo {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   width: 100%;
   text-align: center;
   line-height: 55px;
@@ -34,4 +36,41 @@ li a:hover {
   background-color: rgb(17, 17, 17);
   transition: 1s;
   /* verranderd de achtergrond kleur van een list item als je er met je muis overheen gaat ìn een duur van een seconde */
+}
+
+.container {
+  margin-top: 5%;
+  height: 100vh;
+  margin-inline: 100px;
+}
+
+.introduction {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 200px;
+}
+
+.tekst {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  height: 100%;
+  flex-grow: 3;
+}
+
+.image {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.image img {
+  height: 500px;
+  width: 900px;
+}
+
+.tekstvlak {
+  flex-grow: 1;
+  background-color: #d9d9d9;
 }
