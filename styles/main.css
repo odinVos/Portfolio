@@ -71,6 +71,11 @@ li a:hover {
 }
 
 .tekstvlak {
+  height: 300px;
   flex-grow: 1;
   background-color: #d9d9d9;
+  text-align: center;
+}
+
+.tekstvlak span {
 }
