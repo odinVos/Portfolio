@@ -40,8 +40,9 @@ li a:hover {
 
 .container {
   margin-top: 5%;
-  height: 100vh;
+  height: 100%;
   margin-inline: 100px;
+  margin-bottom: 5%;
 }
 
 .introduction {
@@ -71,12 +72,11 @@ li a:hover {
 }
 
 .tekstvlak {
-  height: 300px;
-  flex-grow: 1;
+  height: 150px;
+  width: 100%;
   background-color: #d9d9d9;
   text-align: center;
 }
 
 .tekstvlak span {
-  
 }
