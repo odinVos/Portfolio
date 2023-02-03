@@ -38,7 +38,7 @@ li a:hover {
   /* verranderd de achtergrond kleur van een list item als je er met je muis overheen gaat ìn een duur van een seconde */
 }
 
-.container {
+main {
   margin-top: 5%;
   height: 100%;
   margin-inline: 100px;
@@ -46,29 +46,34 @@ li a:hover {
 }
 
 .introduction {
-  height: 100%;
+  height: 80vh;
+
+  background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/generic-user-image.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../img/generic-user-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 200px;
+  align-items: center;
 }
 
 .tekst {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 30px;
-  height: 100%;
-  flex-grow: 3;
-}
-
-.image {
-  height: 100%;
-  flex-grow: 1;
-}
-
-.image img {
-  height: 500px;
-  width: 900px;
+  margin-left: 10%;
 }
 
 .tekstvlak {
@@ -76,7 +81,91 @@ li a:hover {
   width: 100%;
   background-color: #d9d9d9;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.tekstvlak span {
+.verwijzing {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.knophouder {
+  margin-top: 3%;
+  height: 100%;
+  align-items: center;
+}
+
+.about-me-button {
+  height: 100px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+}
+
+.about-me-button :hover {
+  background-color: #ff7b00;
+  transition: 1s;
+}
+
+.test {
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  background-color: #d9d9d9;
+  margin-bottom: 5%;
+}
+
+.test img {
+  height: 100%;
+  flex-grow: 1;
+}
+
+.test2 {
+  height: 100%;
+  flex-grow: 3;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: #dc6c03;
+}
+
+.contact-tekst {
+  height: 100%;
+  width: 100%;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  height: 20px;
+  width: 100%;
+  background: #d58336;
+}
+
+.social-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 }
