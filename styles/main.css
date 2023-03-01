@@ -41,7 +41,7 @@ li a:hover {
 main {
   margin-top: 5%;
   height: 100%;
-  margin-inline: 100px;
+  margin-inline: 100px; /* zorgt ervoor dat alles in de main een lege ruimte eromheen heeft  */
   margin-bottom: 5%;
 }
 
@@ -67,16 +67,18 @@ main {
   color: #fff;
   display: flex;
   align-items: center;
-}
+} /*Een image die op een plek blijft als je naar beneden scrollt */
 
 .tekst {
+  /* Deze tekst wordt gebruikt in de "introduction" */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif; /* Een font voor de tekst */
   font-size: 30px;
   margin-left: 10%;
 }
 
 .tekstvlak {
+  /* Een balk met korte informatie die gebruikt word onder de introductie */
   height: 150px;
   width: 100%;
   background-color: #d9d9d9;
@@ -87,17 +89,19 @@ main {
 }
 
 .verwijzing {
+  /* Informatie over de butten die eronder staat */
   margin-top: 8%;
   text-align: center;
 }
 
 .knophouder {
+  /* een onzichtbaar vak dat een button op zijn plaats houd*/
   margin-top: 3%;
   height: 100%;
   align-items: center;
 }
 
-.about-me-button {
+.knop {
   height: 100px;
   width: 100%;
   border: none;
@@ -107,11 +111,13 @@ main {
 }
 
 .about-me-button :hover {
+  /* zorgt ervoor dat de button van kleur varanderd als je er met je muis overheen gaat*/
   background-color: #ff7b00;
-  transition: 1s;
+  transition: 1s; /* zorgt ervoor dat de kleur niet direct veranderd*/
 }
 
-.test {
+.over {
+  /* vak die andere vakken bij elkaar haalt  */
   height: 300px;
   padding: 10px;
   display: flex;
@@ -120,12 +126,13 @@ main {
   margin-bottom: 5%;
 }
 
-.test img {
+.over img {
   height: 100%;
   flex-grow: 1;
 }
 
-.test2 {
+.over-info {
+  /* vak met informatie*/
   height: 100%;
   flex-grow: 3;
   background-color: #d9d9d9;
@@ -136,10 +143,12 @@ main {
 }
 
 .active {
+  /* zorgt ervoor dat de kleur van de navbar anders is op de pagina die actief is*/
   background-color: #dc6c03;
 }
 
 .contact-tekst {
+  /* tekstvlak op de contact pagina*/
   height: 100%;
   width: 100%;
   background-color: #d9d9d9;
@@ -159,13 +168,29 @@ main {
 }
 
 .social-media {
+  /* balk met icons en links*/
   height: 20px;
   width: 100%;
   background: #d58336;
 }
 
 .social-button {
+  /* buttons met icons*/
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+.project {
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-grow: 1;
+  background-color: #d9d9d9;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.info {
+  flex-direction: column;
 }
